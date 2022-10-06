@@ -8,7 +8,7 @@ const createFile = (path)=>{
 
         for(let i = 0; i < 10; i++){
             fs.writeFile(path+`/log/log${i}.txt`,'Hi',(err)=>{
-                if (error) throw error;
+                if (err) throw err
                 console.log(`log${i}.txt`)
             })
         }
